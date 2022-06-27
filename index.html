@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size:4vw;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 1px;
+}
+
+th {
+  background-color: #041a4f;
+  cursor: pointer;
+  color: white;
+  position: sticky;
+  top: 0; 
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+
+th:hover {
+    background-color:#04AA6D;
+    color: white;    
+
+  }
+
+td{
+    border: 2px solid #000000;
+  }
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+  
+tr:hover {
+    background-color:#04AA6D;
+    color: white;      
+}
+</style>
+</head>
+<body>
+
+    <a name="tag0"></a>
+    
+    <table>
+        <thead>
+        <tr>
+          <th colspan="2">Category</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td rowspan="2">Exercise</td>
+              <td><a href="#tag1">Weight</a></td>
+          </tr>
+          <tr>
+            <td>Running</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Study</td>
+            <td><a href="#tag2">Coffee</a></td>
+        </tr>
+        <tr>
+          <td>Place</td>
+      </tr>
+        </tbody>
+    
+</table>
+
+<br>
+
+<h1><a name="tag1"></a><a href="#tag0">#Exercise_Weight</a></h1>
+<table>
+  <thead>
+  <tr>
+    <th>EX<br>Name</th> 
+    <th>EX<br>Logo</th> 
+    <th>EX<br>Mine</th> 
+    <th>EX<br>Special</th> 
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>Royal Never Give Up</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/RNG_logo.svg/1920px-RNG_logo.svg.png" alt="Royal Never Give Up" width="30%"></td>
+        <td>94</td>
+        <td>Anti</td>
+    </tr>
+    <tr>
+        <td>LPL</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/League_of_legends_pro_league_logo.svg/440px-League_of_legends_pro_league_logo.svg.png" alt="Royal Never Give Up" width="30%"></td>
+        <td>94</td>
+        <td>Anti</td>
+    </tr>
+    </tbody>
+  </table>
+
+<br>
+
+<h1><a name="tag2"></a><a href="#tag0">#Study_Coffee</a></h1>
+<table>
+  <thead>
+  <tr>
+    <th>Study<br>Special_1</th> 
+    <th>Study<br>Special_2</th> 
+    <th>Time<br>(Hour)</th> 
+  </tr>
+  </thead>
+  <tbody id = "myTable">
+        <tr>
+            <td>Starbucks<br>Iced Caffe Americano<br></td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1280px-Starbucks_Corporation_Logo_2011.svg.png" alt="React" width="30%"> <img src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[110563]_20210426095937808.jpg" alt="Python" width="30%"></td>
+            <td>4.84</td>
+        </tr>
+        <tr>
+            <td>Starbucks<br>Cold brew<br></td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1280px-Starbucks_Corporation_Logo_2011.svg.png" alt="React" width="30%"> <img src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000000038]_20210430113202595.jpg" alt="Python" width="30%"></td>
+            <td>4.16</td>
+        </tr>
+                <tr>
+            <td>Starbucks<br>Iced Caramel Macchiato</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1280px-Starbucks_Corporation_Logo_2011.svg.png" alt="React" width="30%"> <img src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[110582]_20210415142706078.jpg" alt="Python" width="30%"></td>
+            <td>2.87</td>
+        </tr>
+                <tr>
+            <td>Starbucks<br>Gyeongin National University of Education
+</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1280px-Starbucks_Corporation_Logo_2011.svg.png" alt="React" width="30%"> <img src="https://image.istarbucks.co.kr//upload/store/2019/10/[3658]_20191021032630_q3w0h.jpg" alt="Python" width="30%"></td>
+            <td>2.87</td>
+        </tr>
+<tr>
+            <td>Starbucks<br>Jemulpo</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1280px-Starbucks_Corporation_Logo_2011.svg.png" alt="React" width="30%"> <img src="https://image.istarbucks.co.kr//upload/store/2021/03/[3754]_20210314041038_f5onz.jpg" alt="Python" width="30%"></td>
+            <td>0.83</td>
+        </tr>
+    <tr>
+            <td>Starbucks<br>Iced Starbucks Dolce Latte</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1280px-Starbucks_Corporation_Logo_2011.svg.png" alt="React" width="30%"> <img src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[128695]_20210426092031969.jpg" alt="Python" width="30%"></td>
+            <td>0.83</td>
+    </tr>
+    <tr>
+        <td>Compose<br>Coffee<br>Einspänner</td>
+        <td><img src="https://composecoffee.com/files/attach/site_image/site_image.1626412582.png" alt="ComposeCoffee" width="40%"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Einspaenner.jpg" alt="Einspaenner" width="30%"></td>
+        <td>0.57</td>
+</tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
