@@ -939,3 +939,96 @@ tr:hover {
 
 </body>
 </html>
+
+<html>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <script type="text/javascript">
+            google.charts.load("current", {packages:["timeline"]});
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+          
+              var container = document.getElementById('example3.1');
+              var chart = new google.visualization.Timeline(container);
+              var dataTable = new google.visualization.DataTable();
+              dataTable.addColumn({ type: 'string', id: 'Room' });
+              dataTable.addColumn({ type: 'string', id: 'Name' });
+              dataTable.addColumn({ type: 'date', id: 'Start' });
+              dataTable.addColumn({ type: 'date', id: 'End' });
+              dataTable.addRows([
+                [ 'Korea', 'Jeong Do-jeon&Six Flying Dragons',       new Date(1374,12,0,0,0,0),  new Date(1398,8,0,0,0,24) ],
+                [ 'Korea', 'The Fortress',       new Date(1637,1,3,0,0,0),  new Date(1637,2,24,0,0,24) ],
+                [ 'Korea', 'The Man Standing Next',       new Date(1979,9,16,0,0,0),  new Date(1979,10,26,0,0,0) ],
+                [ 'Korea', '1987',       new Date(1987,1,14,0,0,0),  new Date(1987,7,5,0,0,0) ],
+                [ 'Korea', 'Default',       new Date(1997,1,23,0,0,0),  new Date(1997,12,6,0,0,0) ],
+                [ 'Korea', 'Present',    new Date(2022,1,0,0,0,0),  new Date(2022,2,0,0,0,0) ],
+                ]);
+          
+              var options = {
+                timeline: { colorByRowLabel: true }
+              };
+          
+              chart.draw(dataTable, options);
+            }
+          
+          </script>
+    
+    <div id="example4.1" ></div>
+    <div id="example5.1" ></div>
+    <div id="example3.1"></div>
+</html>
+
+<html>
+<p>Film_History</p>
+
+<table>
+  <thead>
+  <tr>
+    <th>Year<i class="fa fa-sort"></i></th> 
+    <th>Title<i class="fa fa-sort"></i></th> 
+    <th>Poster<i class="fa fa-sort"></i></th>
+    <th>Case<i class="fa fa-sort"></i></th>
+  </tr>
+  </thead>
+  <tbody>
+        <tr>
+            <td>2011</td>
+            <td>Asura: The City of Madness</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/e/e5/Asura_The_City_of_Madness_poster.jpeg" width="60%"></td>
+            <td>大庄洞</td>
+        </tr>
+        <tr>
+            <td>1997</td>
+            <td>Default</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/5/55/Sovereign_Default.jpg" width="60%"></td>
+            <td>IMF</td>
+        </tr>
+        <tr>
+            <td>1987</td>
+            <td>1987: When the Day Comes</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/8/87/1987_When_the_Day_Comes.jpg" width="60%"></td>
+            <td>6·10民主抗爭</td>
+        </tr>
+        <tr>
+            <td>1979</td>
+            <td>The Man Standing Next</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/0/0b/The_Man_Standing_Next_movie_poster%2C_Jan_2020.jpg" width="60%"></td>
+            <td>10.26</td>
+        </tr>
+        <tr>
+            <td>1979</td>
+            <td>The President's Last Bang</td>
+            <td><img src = "https://upload.wikimedia.org/wikipedia/en/b/b6/President%27s_Last_Bang_Poster.jpg" width="60%"></td>
+            <td>10.26</td>
+        </tr>
+        <tr>
+            <td>1637</td>
+            <td>The Fortress</td>
+            <td><img src ="https://upload.wikimedia.org/wikipedia/en/0/0d/The_Fortress_-_%EB%82%A8%ED%95%9C%EC%82%B0%EC%84%B1.jpg" width="60%"></td></td>
+            <td>丙子胡亂</td>
+        </tr>
+    </tbody>
+  </table>
+
+  </html>
+
