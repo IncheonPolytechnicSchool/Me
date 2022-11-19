@@ -53,6 +53,47 @@ tr:hover {
 </head>
 <body>
   <h1>#1.Movie_#1.Result</h1>
+
+
+  <script type="text/javascript" 
+          src="https://www.gstatic.com/charts/loader.js">
+  </script>
+  <div id="chart_div">
+  </div>
+
+  <script>
+    google.charts.load('current', {packages: ['corechart', 'bar']});
+    google.charts.setOnLoadCallback(drawBasic);
+    
+    function drawBasic() {
+
+    var data = google.visualization.arrayToDataTable([
+      ['Platform', 'View',],
+      ['YouTube, YouTube', 16688],
+      ['YouTube, Shorts', 4826],
+      ['Instagram, Reels', 812],
+      ['TikTok, TikTok', 91],
+    ]);
+
+    var options = {
+      title: 'View by Platforms',
+      chartArea: {width: '80%'},
+      hAxis: {
+        title: 'Total Population',
+        minValue: 0
+      },
+      vAxis: {
+        title: 'Platform'
+      }
+    };
+
+    var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
+    chart.draw(data, options);
+  }
+  </script>
+  
+  
   <table>
     <thead>
       <tr>
@@ -144,9 +185,10 @@ tr:hover {
       </tbody>
     </table>
 
+   
 <br>
 
-<h1>#Exercise_Weight</a></h1>
+<h1>#1Exercise_#2Weight</a></h1>
 <table>
   <thead>
   <tr>
@@ -157,6 +199,34 @@ tr:hover {
   </tr>
   </thead>
   <tbody>
+    <tr>
+      <td rowspan="2">
+        NFL
+        <br>
+        <img class="special-image" 
+             src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/1024px-National_Football_League_logo.svg.png" 
+             width="50%">
+      </td>
+      <td>
+        Touch Down
+        <br>
+        <img class="special-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Touchdown_--_Texas_High_School_vs_Highland_Park_High_School_first-round_playoffs.jpg/1920px-Touchdown_--_Texas_High_School_vs_Highland_Park_High_School_first-round_playoffs.jpg" width="50%">
+      </td>
+      <td></td>
+      <td>5</td>
+    </tr>
+    <tr>
+    <td>
+      Interception
+      <br>
+      <img class="special-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Football_interception.jpg/440px-Football_interception.jpg" width="50%">
+    </td>
+    <td></td>
+    <td>4</td>
+</tr>
+
+
+
     <tr>
       <td rowspan="3">
         The Korean Zombie
@@ -187,29 +257,6 @@ tr:hover {
 <tr>
   <td>Fighter</td>
   <td>0</td>
-</tr>
-    <tr>
-      <td rowspan="2">
-        NFL
-        <br>
-        <img class="special-image" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/1024px-National_Football_League_logo.svg.png" width="50%">
-      </td>
-      <td>
-        Touch Down
-        <br>
-        <img class="special-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Touchdown_--_Texas_High_School_vs_Highland_Park_High_School_first-round_playoffs.jpg/1920px-Touchdown_--_Texas_High_School_vs_Highland_Park_High_School_first-round_playoffs.jpg" width="50%">
-      </td>
-      <td></td>
-      <td>5</td>
-  </tr>
-  <tr>
-    <td>
-      Interception
-      <br>
-      <img class="special-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Football_interception.jpg/440px-Football_interception.jpg" width="50%">
-    </td>
-    <td></td>
-    <td>4</td>
 </tr>
     <tr>
       <td rowspan="2">
