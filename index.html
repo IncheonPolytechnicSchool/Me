@@ -49,6 +49,29 @@ tr:hover {
     border-radius: 15px;
 }
 
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
 </style>
 </head>
 <body>
@@ -1793,86 +1816,11 @@ tr:hover {
 
                     <br>
                     
-                    <h1><a name=""></a><a href="#tag0">#Tiamo_EX</a></h1>
-                    <table>
-                        <thead>
-                        <tr>
-                          <th>F</th>
-                          <th>M</th> 
-                          <th>EX</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                                <tr>
-                                    <td>
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/SOD_creat_Shibuya_Halloween_CIMG5511.jpg/800px-SOD_creat_Shibuya_Halloween_CIMG5511.jpg" alt="UFC" width="30%">
-                                        <br>
-                                        本庄鈴ほんじょうすず
-                                    </td>
-                                    <td></td>
-                                    <td>
-                                      26
-                                    </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/CIMG3734sakura.jpg/800px-CIMG3734sakura.jpg" alt="UFC" width="30%">
-                                      <br>
-                                      桜空ももさくらもも
-                                  </td>
-                                  <td></td>
-                                  <td>
-                                    6
-                                  </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  豆沢豆太郎
-                                </td>
-                                <td></td>
-                                <td>
-                                 3
-                                </td>
-                            </tr>
-                              <tr>
-                                <td>
-                                  日下部加奈くさかべかな 
-                                </td>
-                                <td>
-                                  しみけん
-                                </td>
-                                <td>
-                                 3
-                                </td>
-                            </tr>
-                            <tr>
-                              <td rowspan="2">
-                                しみけん
-                              </td>
-                              <td>
-                                日下部加奈くさかべかな 
-                              </td>
-                              <td>
-                               3
-                              </td>
-                              
-                          </tr>
-                          <tr>
-                            <td>
-                              石川澪いしかわみお
-                            </td>
-                            <td>
-                              5
-                            </td>
-                            
-                        </tr>
-                          </tbody>
-                        </table>
+                   
         
   
 
-</body>
-</html>
+
 
 <br>
 <br>
@@ -2414,8 +2362,90 @@ tr:hover {
 
         <br>
 
-        <h1>Exercise_Debate</h1>
-    
+        <button class="collapsible">#Exercise_#Tiamo</button>
+        <div class="content">
+        <table>
+            <thead>
+            <tr>
+              <th>F</th>
+              <th>M</th> 
+              <th>EX</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>
+                            <img class="special-image"
+                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/SOD_creat_Shibuya_Halloween_CIMG5511.jpg/800px-SOD_creat_Shibuya_Halloween_CIMG5511.jpg" 
+                                 width="30%">
+                            <br>
+                            本庄鈴ほんじょうすず
+                        </td>
+                        <td></td>
+                        <td>
+                          26
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>
+                          <img class="special-image"
+                               src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/CIMG3734sakura.jpg/800px-CIMG3734sakura.jpg"
+                               width="30%">
+                          <br>
+                          桜空ももさくらもも
+                      </td>
+                      <td></td>
+                      <td>
+                        6
+                      </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      豆沢豆太郎
+                    </td>
+                    <td></td>
+                    <td>
+                     3
+                    </td>
+                </tr>
+                  <tr>
+                    <td>
+                      日下部加奈くさかべかな 
+                    </td>
+                    <td>
+                      しみけん
+                    </td>
+                    <td>
+                     3
+                    </td>
+                </tr>
+                <tr>
+                  <td rowspan="2">
+                    しみけん
+                  </td>
+                  <td>
+                    日下部加奈くさかべかな 
+                  </td>
+                  <td>
+                   3
+                  </td>
+                  
+              </tr>
+              <tr>
+                <td>
+                  石川澪いしかわみお
+                </td>
+                <td>
+                  5
+                </td>
+                
+            </tr>
+              </tbody>
+            </table>
+            </div>
+        
+        <button class="collapsible">#Japanese_#Tiamo</button>
+        <div class="content">
         <table>
           <thead>
           <tr>
@@ -2738,8 +2768,27 @@ tr:hover {
   [03:02:16]F1:ゆっくり
 </td>  
 </tr>
-            </tbody>
-          </table>
- 
+  </tbody>
+ </table>
+</div>
+
+
+          <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+              });
+            }
+            </script>
+ </body>
   </html>
 
