@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+
+  </head>
+  
+  <body>
+  
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <i class="fa fa-users"></i>
+      <a class="white" href="index.html">Study</a>
+    </div>
+
+    <ul class="navbar__menu">
+        <li><a class="white" href="index.html">Home</a></li>
+        <li><a class="white" href="index.html">Study</a></li>
+        <li><a class="white" href="exercise.html">Exercise</a></li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">Film
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="film_history.html">History</a>
+            <a href="film_history_1945.html">1945</a>
+          </div>
+        </div>
+        </li>
+        <li><a class="white" href="index.html">Tiamo</a></li>
+     </ul>
+
+    <ul class="navbar__icons">
+      <li><i class="fa fa-youtube"></i></li>
+      <li><i class="fa fa-instagram"></i></li>
+    </ul>
+  </nav>
+
+  <h1>#Film_History</h1>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <script type="text/javascript">
+            google.charts.load("current", {packages:["timeline"]});
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+          
+              var container = document.getElementById('example3.1');
+              var chart = new google.visualization.Timeline(container);
+              var dataTable = new google.visualization.DataTable();
+              dataTable.addColumn({ type: 'string', id: 'Room' });
+              dataTable.addColumn({ type: 'string', id: 'Name' });
+              dataTable.addColumn({ type: 'date', id: 'Start' });
+              dataTable.addColumn({ type: 'date', id: 'End' });
+              dataTable.addRows([
+                [ 'Korea', 'Jeong Do-jeon&Six Flying Dragons',       new Date(1374,12,0,0,0,0),  new Date(1398,8,0,0,0,24) ],
+                [ 'Korea', 'Hansan: Rising Dragon',       new Date(1592,7,0,0,0,0),  new Date(1592,8,0,0,0,24) ],
+                [ 'Korea', 'The Fortress',       new Date(1637,1,3,0,0,0),  new Date(1637,2,24,0,0,24) ],
+                [ 'Korea', 'The Man Standing Next',       new Date(1979,9,16,0,0,0),  new Date(1979,10,26,0,0,0) ],
+                [ 'Korea', '1987',       new Date(1987,1,14,0,0,0),  new Date(1987,7,5,0,0,0) ],
+                [ 'Korea', 'Default',       new Date(1997,1,23,0,0,0),  new Date(1997,12,6,0,0,0) ],
+                [ 'Korea', 'Present',    new Date(2022,1,0,0,0,0),  new Date(2022,2,0,0,0,0) ],
+                [ 'World', 'The Big Short',    new Date(2007,1,0,0,0,0),  new Date(2009,2,0,0,0,0) ],
+                [ 'World', 'The Greatest Showman',    new Date(1820,1,0,0,0,0),  new Date(1850,2,0,0,0,0) ],
+                ]);
+          
+              var options = {
+                timeline: { colorByRowLabel: true }
+              };
+          
+              chart.draw(dataTable, options);
+            }
+          
+          </script>
+    
+    <div id="example3.1"></div>
+
+<table>
+  <thead>
+  <tr>
+    <th>Y</th> 
+    <th>D</th>
+    <th>E</th>
+    <th>C</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2007</td>
+      <td>
+        Subprime mortgage crisis
+        <br>
+        <img class="special-image"
+             src = "https://i.guim.co.uk/img/media/04c1ff101304b7de0c6346257a4ab7996497cdf8/0_124_4148_2488/master/4148.jpg?width=620&quality=45&fit=max&dpr=2&s=292842e7f94186aeef1cdeb4b2c8e7e8" 
+             width="70%">
+
+      </td>
+      <td>
+        George W. Bush
+        <br>
+       <img class="special-image"
+            src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/George-W-Bush.jpeg/1024px-George-W-Bush.jpeg" 
+            width="50%">
+     </td>
+      <td>
+         The Big Short
+         <br>
+        <img class="special-image" 
+             src = "https://upload.wikimedia.org/wikipedia/en/1/16/The_Big_Short_%282015_film_poster%29.png" 
+             width="50%">
+      </td>
+    </tr>
+    <tr>
+      <td>1819</td>
+      <td></td>
+      <td>
+        Queen Victoria
+       <img class="special-image" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Queen_Victoria_-_Winterhalter_1859.jpg/800px-Queen_Victoria_-_Winterhalter_1859.jpg" width="50%">
+     </td>
+      <td>The Greatest Showman
+        <br>
+        <img class="special-image" src = "https://upload.wikimedia.org/wikipedia/en/1/10/The_Greatest_Showman_poster.png" width="60%"></td>
+    </tr>
+        <tr>
+          <td rowspan="2">1923</td>
+          <td rowspan="2">
+            09-01
+            <br>
+            關東大地震
+          </td>
+          <td rowspan="2">
+            山本權兵衞
+            <br>
+            <img class="special-image" src = "https://upload.wikimedia.org/wikipedia/commons/a/a9/Gonbee_Yamamoto_later_years.jpg" width="50%"></td>
+          </td>
+          <td>朴烈
+            <br>
+            <img class="special-image" src = "https://upload.wikimedia.org/wikipedia/en/d/d2/Anarchist_from_Colony.jpg" width="50%">
+          </td>
+      </tr>
+      <tr>
+        <td>Pachinko
+          <br>
+          <img class="special-image" src = "https://upload.wikimedia.org/wikipedia/en/2/20/Pachinko_%28TV_series%29.jpeg" width="50%" border-radius="20%"></td>
+    </tr>
+        <tr>
+            <td rowspan="2">1637</td>
+            <td rowspan="2">01-03</td>
+            <td rowspan="2">丙子胡亂</td>
+            <td>The Fortress
+              <br>
+              <img class="special-image" src ="https://upload.wikimedia.org/wikipedia/en/0/0d/The_Fortress_-_%EB%82%A8%ED%95%9C%EC%82%B0%EC%84%B1.jpg" width="50%">
+            </td>
+        </tr>
+        <tr>
+          <td>War of the Arrows
+            <br>
+            <img class="special-image" src ="https://upload.wikimedia.org/wikipedia/en/4/4f/War_of_the_Arrows_film_poster.jpg" width="50%"></td>
+        </tr>
+        <tr>
+          <td>1592</td>
+          <td>
+            08-14
+            <br>
+            閑山島大捷
+          </td>
+          <td rowspan="2">
+            壬辰倭亂
+            <br>
+            -
+            <br>
+            丁酉再亂
+            <br>
+            <img class="special-image" 
+                 src = "https://upload.wikimedia.org/wikipedia/commons/a/a5/%E6%9C%9D%E9%AE%AE%E5%AE%A3%E7%A5%96.jpg"
+                 width="50%">
+            <br>
+            朝鮮宣祖
+          </td>
+          <td>Hansan: Rising Dragon
+            <br>
+            <img class="special-image" 
+                 src = "https://upload.wikimedia.org/wikipedia/en/d/d5/Hansan_%28film%29.jpg" 
+                 width="50%">
+          </td>
+        </tr>
+        <tr>
+          <td>1572</td>
+          <td>
+            10-26
+            <br>
+            鳴梁海戰
+          </td>
+          <td>The Admiral: Roaring Currents
+            <br>
+            <img class="special-image" src = "https://upload.wikimedia.org/wikipedia/en/3/3a/Battle_of_Myeongryang_poster.jpg" width="50%">
+          </td>
+        </tr>
+      <tr>
+        <td rowspan="2">1374</td>
+        <td rowspan="2">
+          麗末鮮初
+          <br>
+          <img class="special-image" 
+               src = "https://upload.wikimedia.org/wikipedia/commons/6/6a/King_Taejo_Yi_02.jpg" 
+               width="50%">
+          <br>
+          朝鮮太祖
+        </td>
+        <td rowspan="2">
+          麗末鮮初
+          <br>
+          <img class="special-image" 
+               src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Sejong_the_Great_Bronze_statue_02.JPG/1024px-Sejong_the_Great_Bronze_statue_02.JPG" 
+               width="50%">
+          <br>
+          朝鮮世宗
+        </td>
+        <td>Jeong Do-jeon
+          <img class="special-image" src = "https://upload.wikimedia.org/wikipedia/en/2/29/Jeong_Do-Jeon_poster.jpg" width="70%"></td>
+     </tr>
+    <tr>
+      <td>Six Flying Dragons
+        <br>
+        <img class="special-image" src = "https://upload.wikimedia.org/wikipedia/en/b/bf/Six_Flying_Dragons_%28%EC%9C%A1%EB%A3%A1%EC%9D%B4_%EB%82%98%EB%A5%B4%EC%83%A4%29.jpg" width="50%"></td>
+  </tr>
+    </tbody>
+  </table>
+
+
+    <br>
+
+
+          <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;ƒ
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+              });
+            }
+            </script>
+ </body>
+  </html>
+
