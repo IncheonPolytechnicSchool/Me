@@ -73,11 +73,6 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -121,3 +116,7 @@ a {
     padding: 8px 12px;
 }
 
+a.white {
+  text-decoration: none;
+  color: white;
+}
