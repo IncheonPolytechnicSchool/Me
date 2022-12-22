@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+
+  </head>
+  
+  <body>
+  
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <i class="fa fa-users"></i>
+        <a class="white" href="index.html">Study</a>
+      </div>
+  
+      <ul class="navbar__menu">
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">Study
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="study_complete.html">Complete</a>
+              <a href="Study_ing.html">ING</a>
+            </div>
+          </div>
+          </li>
+          <li><a class="white" href="exercise.html">Exercise</a></li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">Film
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="film_history.html">History</a>
+              <a href="film_history_1945.html">1945</a>
+            </div>
+          </div>
+          </li>
+          <li><a class="white" href="index.html">Tiamo</a></li>
+       </ul>
+  
+      <ul class="navbar__icons">
+        <li><i class="fa fa-youtube"></i></li>
+        <li><i class="fa fa-instagram"></i></li>
+      </ul>
+    </nav>
+  
+
+  <h1>#Study_Complete</h1>
+
+    <body>
+        <script>
+            $(document).ready(function(){
+              $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function() {
+                  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+              });
+            });
+            
+            function sortTable(n) {
+              var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+              table = document.getElementById("myTable");
+              switching = true;
+              dir = "asc"; 
+              while (switching) {
+                switching = false;
+                rows = table.rows;
+                for (i = 0; i < (rows.length - 1); i++) {
+                  shouldSwitch = false;
+                  x = rows[i].getElementsByTagName("TD")[n];
+                  y = rows[i + 1].getElementsByTagName("TD")[n];
+                  if (dir == "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                      shouldSwitch= true;
+                      break;
+                    }
+                  } else if (dir == "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                      shouldSwitch = true;
+                      break;
+                    }
+                  }
+                }
+                if (shouldSwitch) {
+                  rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                  switching = true;
+                  switchcount ++;      
+                } else {
+                  if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                  }
+                }
+              }
+            }
+            </script>
+    
+    <p>study</p>
+    <input id="myInput" type="text" placeholder="Search">
+    <br><br>
+    
+    <table>
+      <thead>
+      <tr>
+        <th onclick="sortTable(0)">* <i class="fa fa-sort"></i></th> 
+        <th onclick="sortTable(1)">Image <i class="fa fa-sort"></i></th> 
+        <th onclick="sortTable(2)">Language<br><i class="fa fa-sort"></i></th>
+        <th onclick="sortTable(3)">Hour<i class="fa fa-sort"></i></th>
+        <th onclick="sortTable(3)">Page<i class="fa fa-sort"></i></th>
+      </tr>
+      </thead>
+      <tbody id = "myTable">
+           
+            <tr>
+                <td>
+                    <img class="special-image" 
+                         src = "https://upload.wikimedia.org/wikipedia/commons/6/66/Denis_Villeneuve_Cannes_2018.jpg" 
+                         width="100%">
+                    <br>
+                    Denis<br>Villeneuve
+                </td>
+                <td>
+                    <img class="special-image" 
+                         src = "https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg" 
+                         width="100%">
+                    <br>
+                    Dune
+                </td>
+                <td>English</td>
+                <td>2.60</td>
+                <td></td>
+                </tr>
+            <tr>
+                <td>Guardians of the Galaxy</td>
+                <td><img src = "https://upload.wikimedia.org/wikipedia/en/3/33/Guardians_of_the_Galaxy_%28film%29_poster.jpg" width="100%"></td>
+                <td>English</td>
+                <td>2.03</td>
+                <td></td>
+            </tr>
+             <tr>
+                <td>Guardians of the Galaxy Vol. 2</td>
+                <td><img src = "https://upload.wikimedia.org/wikipedia/en/a/ab/Guardians_of_the_Galaxy_Vol_2_poster.jpg" width="100%"></td>
+                <td>English</td>
+                <td>2.28</td>
+                <td></td>
+            </tr>
+                 <tr>
+                <td>Ant-Man</td>
+                <td><img src = "https://upload.wikimedia.org/wikipedia/en/1/12/Ant-Man_%28film%29_poster.jpg" width="100%"></td>
+                <td>English</td>
+                <td>1.95</td>
+                <td></td>
+            </tr>
+             <tr>
+                <td>Inception:<br>The Shooting Scrip</td>
+                <td><img src="https://images-na.ssl-images-amazon.com/images/I/61cOm8-xzTL._SX328_BO1,204,203,200_.jpg" width = "100%"></td>
+                <td>English</td>
+                <td></td>
+                <td>218</td>
+            </tr>
+            <tr>
+                <td>Inside<br>Out</td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/en/0/0a/Inside_Out_%282015_film%29_poster.jpg" width = "100%"></td>
+                <td>English</td>
+                <td>1.58</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Digital<br>Fortress</td>
+                <td><img src ="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1360095966l/11125.jpg" width = "100%"></td>
+                <td>English</td>
+                <td></td>
+                <td>510</td>
+            </tr>
+            <tr>
+                <td>Deception<br>Point</td>
+                <td><img src ="https://images-eu.ssl-images-amazon.com/images/I/41T7ZrFJefL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg" width = "100%"></td>
+                <td>English</td>
+                <td></td>
+                <td>556</td>
+            </tr>
+            <tr>
+                <td>Angels&<br>Demons</td>
+                <td><img src ="https://images-na.ssl-images-amazon.com/images/I/510uIcLWISL._SX327_BO1,204,203,200_.jpg" width = "100%"></td>
+                <td>English</td>
+                <td></td>
+                <td>736</td>
+            </tr>
+            <tr>
+                <td>Okja</td>
+                <td><img src ="https://upload.wikimedia.org/wikipedia/en/f/f6/Okja.png" width = "100%"></td>
+                <td>English</td>
+                <td>2.00</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Sum</td>
+                <td></td>
+                <td></td>
+                <td>12.44</td>
+                <td>2020</td>
+            </tr>
+        </tbody>
+      </table>
+    
+    </body>
+    </html>
+          <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;ƒ
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+              });
+            }
+            </script>
+ </body>
+  </html>
+
