@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel="stylesheet" href="../style.css">
+    <script src="../main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+
+  </head>
+  
+  <body>
+  
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <i class="fa fa-users"></i>
+        <a class="white" href="../index.html">Study</a>
+      </div>
+  
+      <ul class="navbar__menu">
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">Study
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="study_complete.html">Complete</a>
+            <a href="study_ing.html">ing</a>
+            <a href="book_complete.html">Book_Complete</a>
+          </div>
+        </div>
+        </li>
+        <li>
+          <a class="white" 
+               href="exercise.html">
+               Exercise
+          </a>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">Film
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="film_history.html">History</a>
+            <a href="film_history_1945.html">1945</a>
+          </div>
+        </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">0
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="0_booking.html">booking</a>
+            <a href="0_goods.html">booking</a>
+            <a href="0_tiamo.htmm">tiamo</a>
+          </div>
+        </div>
+        </li>
+     </ul>
+  
+      <ul class="navbar__icons">
+        <li><i class="fa fa-youtube"></i></li>
+        <li><i class="fa fa-instagram"></i></li>
+      </ul>
+  </nav>
+
+    <h1>#Goods</h1>
+    <input id="myInput" type="text" placeholder="Search">
+    <br><br>
+    
+    <table>
+      <thead>
+      <tr>
+        <th onclick="sortTable(0)">Brand<br>1<br><i class="fa fa-sort"></i></th> 
+        <th onclick="sortTable(1)">Brand<br>2<br><i class="fa fa-sort"></i></th> 
+        <th onclick="sortTable(2)">Goods<br><i class="fa fa-sort"></i></th>
+        <th onclick="sortTable(3)">Category<br>1<br><i class="fa fa-sort"></i></th>
+        <th onclick="sortTable(4)">Category<br>2<br><i class="fa fa-sort"></i></th>
+      </tr>
+      </thead>
+      <tbody id = "myTable">
+     <tr>
+      <td>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/2880px-Logo_NIKE.svg.png"
+             width="100%">
+        <br>
+        nike
+      </td>
+      <td>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Jumpman_logo.svg/1280px-Jumpman_logo.svg.png" 
+             width="100%">
+        <br>
+        Air
+        <br> 
+        Jordan
+      </td>
+      <td>
+        <img class="special-image" 
+             src="https://prosportks.com/wp-content/uploads/2022/03/DC7485-010.gif" 
+             width="100%">
+        <br>
+        Jordan Jumpman Embriodery
+        <br>
+        DC7486-010
+      </td>
+      <td>
+        <img class="special-image" 
+        src="https://upload.wikimedia.org/wikipedia/commons/2/24/Blue_Tshirt.jpg" 
+        width="100%">
+        <br>
+        T-Shirts
+      </td>
+      <td>
+        <img class="special-image" 
+        src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Crew_neck_T-shirt.jpg" 
+        width="100%">
+        <br>
+        crew neck
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/2880px-Logo_NIKE.svg.png"
+             width="100%">
+        <br>
+        nike
+      </td>
+      <td>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/2880px-Logo_NIKE.svg.png"
+             width="100%">
+        <br>
+        Swoosh
+      </td>
+      <td>
+        <img class="special-image"
+             src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/v0monkuwptys8adiyngf/%EC%8A%A4%ED%8F%AC%EC%B8%A0%EC%9B%A8%EC%96%B4-%ED%81%B4%EB%9F%BD-%ED%94%8C%EB%A6%AC%EC%8A%A4-%EB%82%A8%EC%84%B1-%ED%92%80%EC%A7%91-%ED%9B%84%EB%94%94-gv4jh1OU.png"
+             width="100%">
+        <br>
+        BV2646-010
+      </td>
+      <td>
+        hoodie
+        <br>
+        <img class="special-image"
+             src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Hoodie_man.jpg"
+             width="100%">
+      </td>
+      <td>
+        zipper
+        <br>
+        <img class="special-image"
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Coil_plastic_and_metal_zippers.jpg/1920px-Coil_plastic_and_metal_zippers.jpg"
+             width="70%">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/2880px-Logo_NIKE.svg.png"
+             width="100%">
+        <br>
+        nike
+      </td>
+      <td>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/2880px-Logo_NIKE.svg.png"
+             width="100%">
+        <br>
+        Swoosh
+      </td>
+      <td>
+        <img class="special-image"
+             src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/bebhn43gimgzt5mh25ok/%EC%8A%A4%ED%8F%AC%EC%B8%A0%EC%9B%A8%EC%96%B4-%ED%81%B4%EB%9F%BD-%ED%94%8C%EB%A6%AC%EC%8A%A4-%EB%82%A8%EC%84%B1-%ED%92%80%EC%A7%91-%ED%9B%84%EB%94%94-gv4jh1OU.png"
+             width="100%">
+        <br>
+        BV2646-063
+      </td>
+      <td>
+        hoodie
+        <br>
+        <img class="special-image"
+             src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Hoodie_man.jpg"
+             width="100%">
+      </td>
+      <td>
+        zipper
+        <br>
+        <img class="special-image"
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Coil_plastic_and_metal_zippers.jpg/1920px-Coil_plastic_and_metal_zippers.jpg"
+             width="70%">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        windbreaker
+        <br>
+        <img class ="special-image"
+             src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Windbreaker_Jacket%2C_Hood_Outside_Transparency.png"
+             width="70%">
+      </td>
+      <td>
+        DM5947-011
+        <br>
+        <img class="special-image"
+             src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/342cae83-42be-4c1f-98de-b8d5f525bae9/%EB%A6%AC%ED%8E%A0-%EB%A7%88%EC%9D%BC%EB%9F%AC-%EB%82%A8%EC%84%B1-%EB%9F%AC%EB%8B%9D-%EC%9E%AC%ED%82%B7-ucmVtuI1.png"
+             width="70%">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Jordan Essential Flight 23
+        <br>
+        <img class="special-image"
+             src="https://static.nike.com/a/images/t_default/9179cbd4-3a8b-44be-b742-e7ca7d57cf35/jordan-essentials-flight-23-mens-graphic-t-shirt-4PpXWQ.png"
+             width="100%">
+        </td>
+        <td>
+          DC7486-010
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Jordan Air Stretch
+          <br>
+          <img class="special-image"
+               src="https://img.bstn.com/eyJidWNrZXQiOiJic3RuLWltYWdlLXNlcnZlciIsImtleSI6ImNhdGFsb2cvcHJvZHVjdC9ETTE0NjItMDEwL0RNMTQ2Mi0wMTAtMDEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvbnRhaW4iLCJ3aWR0aCI6NTgwLCJoZWlnaHQiOjcyNSwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0="
+               width="70%">
+          DM1463-010
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Move To Zero
+          <br>
+          <img class="special-image"
+               src="https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/099c597a-cba4-4683-b677-886a2333bfa3/nike-sustainability-move-to-zero.jpg"
+               width="70%">
+        </td>
+        <td>
+          Nike Sportswear So Pack 1
+          <br>
+          <img class="special-image"
+               src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/64580be8-7802-4e6c-a680-02204eeff79d/sportswear-t-shirt-Qs4XKh.png"
+               width="70%">
+        <td>
+          DR7972-010
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          Nike Sportswear Air
+          <br>
+          <img class="special-image"
+               src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/f649e16a-b3cd-464f-8aed-1b5c2fc7e3be/sportswear-air-t-shirt-Z2qWzZ.png" 
+               width="70%">
+          DR7804-010
+        </td>
+      </tr>
+    </tbody>
+  </table>
+           
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  dir = "asc"; 
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 0; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;      
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+            </script>
+ </body>
+  </html>
+
